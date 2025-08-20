@@ -11,12 +11,44 @@
     --text-secondary: #14212B99;
 
     --font-family: 'DM Sans', sans-serif;
+
+
+    --font-size: 16px;
+    --container-width: 1200px;
+}
+
+/* PC */
+@media (max-width: 1870px) {
+    :root {
+        --font-size: 15px;
+        --container-width: 1000px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --font-size: 14px;
+        --container-width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    :root {
+        --font-size: 13px;
+        --container-width: 95%;
+    }
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: var(--font-size);
 }
 
 body {
@@ -50,7 +82,7 @@ header {
 /* .navbar: */
 
 .navbar .container {
-    width: 80%;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,11 +143,29 @@ header {
     background: var(--primary-color);
 }
 
+@media (max-width: 1870px) {
+    .navbar .container {
+        width: 1200px;
+    }
+
+    .navbar .logo span {
+        font-size: 28px;
+    }
+
+    .navbar .nav-links li a {
+        font-size: 12px;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+}
+
 
 
 /* Hero Section */
 .banner {
-    width: 80%;
+    width: 1440px;
     margin: 0 auto;
 }
 
@@ -209,12 +259,34 @@ header {
     background: var(--primary-color);
 }
 
+@media (max-width: 1870px) {
+    .banner {
+        width: 1200px;
+    }
+
+    .banner span {
+        font-size: 10px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner p {
+        font-size: 11px;
+    }
+
+    .banner .action-button button,
+    .banner .action-button a {
+        font-size: 12px;
+    }
+}
 
 
 
 /* Main Section*/
 main .container {
-    width: 70%;
+    width: var(--container-width);
     margin: 0 auto;
     padding-top: 5rem;
 }
@@ -346,6 +418,73 @@ main .container {
     font-size: 15px;
 }
 
+
+@media (max-width: 1870px) {
+    .about-section {
+        gap: 0rem;
+    }
+
+    .about-section .about-content span {
+        font-size: 16px;
+    }
+
+    .about-section .about-content h1 {
+        font-size: 42px;
+    }
+
+    .about-section .about-content p {
+        font-size: 11px;
+        line-height: 20px;
+        padding: 2rem 0 1rem 0;
+    }
+
+
+    .about-section .about-checklist .checlist-item {
+        font-size: 11px;
+        line-height: 20px;
+        margin: 1rem 0;
+    }
+
+    .about-section .about-images .about-icons .icon4 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-section .about-images .about-icons .icon3 {
+        transform: translate(-20%, -50%);
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-section .about-images .about-icons .icon2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-section .about-images .image-1 {
+        top: 0;
+        left: 10%;
+        width: 270px;
+        height: 330px;
+    }
+
+    .about-section .about-images .image-2 {
+        bottom: 15%;
+        right: 10%;
+        width: 280px;
+        height: 270px;
+
+    }
+
+    .about-section .about-images .image-3 {
+        position: absolute;
+        right: 18%;
+        top: 12%;
+        z-index: 1;
+        width: 150px;
+    }
+}
+
 /* Mission */
 .mission {
     display: flex;
@@ -356,8 +495,6 @@ main .container {
 
 .mission .mission-list {
     display: flex;
-    justify-content: space-around;
-    width: 90%;
     margin: 0 auto;
     margin-top: 5rem;
 }
@@ -377,6 +514,9 @@ main .container {
     letter-spacing: 50%;
     font-weight: 700;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .mission h1 {
@@ -446,6 +586,52 @@ main .container {
     text-align: center;
 }
 
+@media (max-width: 1870px) {
+    .mission {
+        margin-top: 3rem;
+    }
+
+    .mission .mission-list {
+        margin-top: 3rem;
+    }
+
+    .mission span {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .mission h1 {
+        font-size: 46px;
+    }
+
+    .mission p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .mission .mission-list .list-item {
+        padding: 15px;
+        gap: 1rem;
+        width: 170px;
+    }
+
+    /* thêm .list-item đổi avtive thành hover nếu có icon svg */
+    /* .mission .mission-list .list-item:hover{ */
+    .mission .mission-list .active {
+        scale: 1;
+    }
+
+
+    .mission .mission-list img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mission .mission-list .list-item h5 {
+        font-size: 13px;
+    }
+}
+
 
 /* Vision */
 .vision {
@@ -461,6 +647,8 @@ main .container {
     letter-spacing: 50%;
     font-weight: 500;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
 }
 
 .vision .vision-content span img {
@@ -527,6 +715,80 @@ main .container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1870px) {
+    .vision {
+        gap: 2rem;
+        margin: 6rem 0;
+    }
+
+    .vision .vision-content span {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+
+    .vision .vision-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .vision .vision-content p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--text-secondary);
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    .vision .vision-content button {
+        border: none;
+        background: none;
+    }
+
+    .vision .vision-content button a {
+        text-decoration: none;
+        color: var(--text-white);
+        padding: 20px 30px;
+        background-color: var(--primary-color);
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .vision .vision-content a:hover {
+        background: var(--primary-color-hover);
+        transition: all 0.3s ease;
+    }
+
+    .vision .vision-content button svg {
+        color: var(--text-white);
+    }
+
+    .vision .vision-video {
+        position: relative;
+    }
+
+    .vision .vision-video img {
+        width: 480px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .vision .vision-video svg {
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        color: var(--text-white);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
@@ -949,7 +1211,7 @@ main .container {
 .fresh-products .fresh-content p {
     color: var(--text-secondary);
     font-weight: 400;
-    font-style: 16px;
+    font-size: 16px;
 }
 
 .fresh-products .fresh-content .fresh-progress {
@@ -1074,7 +1336,8 @@ progress::-moz-progress-bar {
     border-radius: 8px;
 
 }
-.provide .provide-content button a:hover{
+
+.provide .provide-content button a:hover {
     background: var(--primary-color-hover);
     transition: all 0.3s ease;
 }
@@ -1190,7 +1453,7 @@ progress::-moz-progress-bar {
 
 }
 
-.blogs-items .items-content .items-action button a:hover{
+.blogs-items .items-content .items-action button a:hover {
     background: var(--secondary-color-hover);
     transition: all 0.3s ease;
 }
@@ -1285,7 +1548,7 @@ progress::-moz-progress-bar {
 .contact-items .contact-image .contact-icon {
     position: absolute;
     top: 3%;
-    left: 55%;
+    right: 27%;
 }
 
 .contact-items .contact-image .contact-icon .icon1 {
@@ -1351,7 +1614,7 @@ progress::-moz-progress-bar {
     margin-top: 1rem;
 }
 
-.contact-items form button:hover{
+.contact-items form button:hover {
     background: var(--primary-color-hover);
     transition: all 0.3s ease;
 }
@@ -1367,7 +1630,7 @@ footer {
 
 footer .container {
     margin: 0 auto;
-    width: 60%;
+    width: var(--container-width);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     grid-template-rows: 1fr;
@@ -1408,6 +1671,7 @@ footer .footer-items p {
     font-size: 16px;
     line-height: 150%;
     margin-top: 2rem;
+    width: 80%;
 }
 
 footer .footer-items .footer-contact {
