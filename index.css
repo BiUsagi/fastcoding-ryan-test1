@@ -3,6 +3,9 @@
     --secondary-color: #54A029;
     --icon-color: #54A029;
 
+    --primary-color-hover: #e6993b;
+    --secondary-color-hover: #3d7a1e;
+
     --text-white: #ffffff;
     --text-black: #000000;
     --text-secondary: #14212B99;
@@ -18,10 +21,13 @@
 
 body {
     font-family: var(--font-family);
+    /* position: relative; */
 }
 
 header {
-    background: #0000009a;
+    /* background: #0000009a; */
+    background-image: url('images/content/banner.png');
+    background-size: cover;
     height: 95vh;
     border-bottom: 5px solid #afafaf;
 }
@@ -29,12 +35,25 @@ header {
 /* Navigation */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0;
 
+    position: fixed;
+    top: 0;
+    background: #00000052;
+    z-index: 999;
+}
+
+/* .navbar: */
+
+.navbar .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar .logo span {
@@ -67,7 +86,21 @@ header {
     border-radius: 4px;
 }
 
-.navbar .nav-links li a:hover::before {
+.navbar .nav-links li.primary:hover {
+    background: var(--primary-color-hover);
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links li.primary:hover a {
+    color: var(--text-white);
+}
+
+.navbar .nav-links li a:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.navbar>.container>.nav-links>li:not(:last-child)>a:hover::before {
     content: "";
     position: absolute;
     width: 60%;
@@ -93,6 +126,7 @@ header {
     justify-content: center;
     gap: 1.5rem;
     height: 70vh;
+    transform: translateY(20%);
 }
 
 .banner span {
@@ -132,6 +166,12 @@ header {
     font-weight: bold;
 }
 
+.banner .action-button .discover-button:hover,
+.banner .action-button .play-button:hover {
+    background: var(--primary-color-hover);
+    transition: all 0.3s ease;
+}
+
 .banner .action-button .play-button {
     background: var(--primary-color);
     border: none;
@@ -148,6 +188,27 @@ header {
     color: var(--text-white);
     font-size: 14px;
 }
+
+.banner .action-button .watch-video:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.banner .action-button a {
+    position: relative;
+}
+
+.banner .action-button .watch-video:hover::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+}
+
 
 
 
@@ -267,6 +328,11 @@ main .container {
 .about-section .about-content button {
     border: none;
     margin-top: 2.5rem;
+}
+
+.about-section .about-content button a:hover {
+    background: var(--secondary-color-hover);
+    transition: all 0.3s ease;
 }
 
 .about-section .about-content button a {
@@ -434,6 +500,11 @@ main .container {
     gap: 0.5rem;
 }
 
+.vision .vision-content a:hover {
+    background: var(--primary-color-hover);
+    transition: all 0.3s ease;
+}
+
 .vision .vision-content button svg {
     color: var(--text-white);
 }
@@ -594,6 +665,12 @@ main .container {
 }
 
 
+.product .product-title button a:hover {
+    background: var(--secondary-color-hover);
+    transition: all 0.3s ease;
+}
+
+
 .product .product-items img {
     width: 100%;
     height: 100%;
@@ -661,6 +738,7 @@ main .container {
     font-weight: 400;
     font-size: 16px;
 }
+
 
 .product .product-items .items-content button svg {
     width: 24px;
@@ -778,7 +856,7 @@ main .container {
     padding: 15px;
 }
 
-.testimonials .action-button .active {
+.testimonials .action-button button:hover {
     background: var(--primary-color);
     color: var(--text-white);
     border-radius: 50%;
@@ -805,7 +883,7 @@ main .container {
     height: 100%;
 }
 
-.fresh-products .fresh-images img{
+.fresh-products .fresh-images img {
     width: 570px;
     height: 570px;
 }
@@ -996,6 +1074,10 @@ progress::-moz-progress-bar {
     border-radius: 8px;
 
 }
+.provide .provide-content button a:hover{
+    background: var(--primary-color-hover);
+    transition: all 0.3s ease;
+}
 
 /* Blogs */
 .blogs {
@@ -1106,6 +1188,11 @@ progress::-moz-progress-bar {
     border-radius: 5px;
     box-shadow: 0px 5px 13px 0px #54A02940;
 
+}
+
+.blogs-items .items-content .items-action button a:hover{
+    background: var(--secondary-color-hover);
+    transition: all 0.3s ease;
 }
 
 /* Contact */
@@ -1262,6 +1349,11 @@ progress::-moz-progress-bar {
     color: var(--text-white);
     padding: 17px 50px;
     margin-top: 1rem;
+}
+
+.contact-items form button:hover{
+    background: var(--primary-color-hover);
+    transition: all 0.3s ease;
 }
 
 /* Footer */
