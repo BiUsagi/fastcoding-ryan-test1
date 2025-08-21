@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #F5AB48;
+    --secondary-color: #54A029;
+    --icon-color: #54A029;
+
+    --primary-color-hover: #e6993b;
+    --secondary-color-hover: #3d7a1e;
+
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-secondary: #14212B99;
+
+    --font-family: 'DM Sans', sans-serif;
+
+
+    --font-size: 16px;
+    --container-width: 1200px;
+}
+
+/* PC */
+@media (max-width: 1870px) {
+    :root {
+        --font-size: 15px;
+        --container-width: 1000px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --font-size: 14px;
+        --container-width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    :root {
+        --font-size: 13px;
+        --container-width: 95%;
+    }
+}
