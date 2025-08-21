@@ -92,6 +92,8 @@ header {
     font-size: 36px;
     color: var(--text-white);
     font-weight: 700;
+    font-family: 'MuseoModerno', sans-serif;
+
 }
 
 
@@ -2917,7 +2919,7 @@ footer {
     border-top: 1px solid #898989;
 }
 
-.footer__social-icon{
+.footer__social-icon {
     display: flex;
     gap: 1rem;
     margin-right: 10rem;
@@ -3129,7 +3131,7 @@ footer {
         text-align: center;
     }
 
-    .footer__social-icon{
+    .footer__social-icon {
         display: flex;
         gap: 1rem;
         margin-right: 0;
