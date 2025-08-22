@@ -10,14 +10,56 @@
 
 }
 
+/* About image responsive */
+@media(min-width: 320px) and (max-width: 1023.99px) {
+    .about__images {
+        min-width: 350px;
+    }
+}
+/* Contact imgae responsive */
+@media(min-width: 768px) and (max-width: 1023.99px) {
+    .contact__image {
+        height: 280px;
+        width: 690px !important;
+        margin: 0 auto;
+    }
+}
+@media(min-width: 420px) and (max-width: 767.99px) {
+    .contact__image {
+        height: 280px;
+        width: 400px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+    .contact__img2 {
+        width: 90% !important;
+    }
+
+    .contact__icon {
+        right: 1% !important;
+    }
+}
+
 
 /* Mobile Product */
-@media (min-width: 320px) and (max-width: 450px){
+@media (min-width: 320px) and (max-width: 450px) {
     .fresh__image-title {
         left: 0 !important;
         padding: 10px !important;
     }
+
+    .about__images img {
+        display: none;
+    }
+
+    .about__images {
+        height: 3rem !important;
+    }
 }
+
+
 
 
 /* PC */
@@ -1175,9 +1217,9 @@
 
     .about__images {
         position: relative;
-        width: 100%;
         height: 300px;
-        margin: 5rem 0;
+        width: 0;
+        margin: 5rem auto;
     }
 
     .about__icon4 {

@@ -244,7 +244,8 @@ header {
 
 .about__images {
     position: relative;
-    width: 100%;
+    /* width: 100%;  */
+    min-width: 536px;
     height: 540px;
 }
 
