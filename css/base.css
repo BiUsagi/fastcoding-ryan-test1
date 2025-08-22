@@ -1440,6 +1440,7 @@ footer {
     line-height: 24px;
     text-decoration: none;
     color: var(--text-white);
+    font-family: 'MuseoModerno', sans-serif;
 }
 
 .footer__items p {
@@ -1462,6 +1463,19 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.footer__contact-items a{
+    text-decoration: none;
+    color: white;
+}
+.footer__contact-items a:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer__contact-items address{
+    font-style: normal;
 }
 
 .footer__contact-items svg {
@@ -1531,7 +1545,7 @@ footer {
     text-decoration: none;
 }
 
-.footer__postItem-content h3 a:hover{
+.footer__postItem-content h3 a:hover {
     opacity: 0.8;
     transition: all 0.3s ease;
 }
