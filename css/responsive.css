@@ -1,3 +1,16 @@
+/* Header responsive */
+@media(min-width: 1024px) and (max-width: 1260px) {
+    .navbar__container {
+        width: calc(100% - 60px) !important;
+    }
+
+    .hero__container{
+        margin-left: 30px;
+    }
+
+}
+
+
 /* PC */
 @media (max-width: 1870px) {
 
@@ -770,10 +783,11 @@
     .product__items {
         height: 300px;
     }
-
+/* 
     .product__items::after {
         background: #54A02991;
-    }
+        opacity: 0.5;
+    } */
 
     .product__items-content {
         display: block;
