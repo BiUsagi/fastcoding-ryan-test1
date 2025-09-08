@@ -19,8 +19,30 @@
 @media(max-width: 520px) {
     .mission__list-item {
         width: 50% !important;
-        max-width: 135px;
+        max-width: 180px;
         height: auto !important;
+    }
+}
+
+@media(max-width: 462px) {
+    .mission__list-item {
+        max-width: 110px;
+    }
+
+    .mission__list {
+        gap: 0.5rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .section-title-common {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-title-common span {
+        justify-content: flex-start !important;
     }
 }
 
@@ -126,13 +148,6 @@
         gap: 0rem;
     }
 
-    .about__content span {
-        font-size: 16px;
-    }
-
-    .about__content h1 {
-        font-size: 42px;
-    }
 
     .about__content p {
         font-size: 11px;
@@ -196,14 +211,6 @@
         margin-top: 3rem;
     }
 
-    .mission span {
-        font-size: 16px;
-        line-height: normal;
-    }
-
-    .mission h1 {
-        font-size: 46px;
-    }
 
     .mission p {
         font-size: 12px;
@@ -237,17 +244,6 @@
         margin: 6rem 0;
     }
 
-    .vision__content span {
-        font-size: 14px;
-        line-height: normal;
-        margin-bottom: 1rem;
-    }
-
-    .vision__content h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
     .vision__content p {
         font-size: 12px;
         line-height: normal;
@@ -267,15 +263,6 @@
 
     /* Offer */
 
-    .offer__title span {
-        font-size: 15px;
-    }
-
-    .offer__title h1 {
-        font-weight: 700;
-        font-size: 42px;
-    }
-
     .offer__title p {
         font-size: 12px;
         line-height: normal;
@@ -290,15 +277,6 @@
     }
 
     /* Product */
-    .product__title span {
-        font-size: 15px;
-    }
-
-
-    .product__title h1 {
-        font-size: 42px;
-    }
-
     .product__title p {
         font-size: 12px;
     }
@@ -334,13 +312,7 @@
     }
 
     /* Testimonials */
-    .testimonials__title span {
-        font-size: 15px;
-    }
 
-    .testimonials__title h1 {
-        font-size: 42px;
-    }
 
     .testimonials__items-title img {
         width: 50px;
@@ -400,7 +372,7 @@
         padding: 30px;
     }
 
-    .fresh__image-title h1 {
+    .fresh__image-title h2 {
         font-size: 36px;
     }
 
@@ -413,14 +385,6 @@
         width: 65%;
     }
 
-    .fresh__content span {
-        font-size: 15px;
-        line-height: normal;
-    }
-
-    .fresh__content h1 {
-        font-size: 42px;
-    }
 
     .fresh__content p {
         font-size: 12px;
@@ -443,7 +407,7 @@
         height: 500px;
     }
 
-    .provide__content h1 {
+    .provide__content h2 {
         font-size: 42px;
         width: 900px;
     }
@@ -464,13 +428,6 @@
         width: var(--container-width);
     }
 
-    .blogs__title span {
-        font-size: 14px;
-    }
-
-    .blogs__title h1 {
-        font-size: 40px;
-    }
 
     .blogs__title p {
         font-size: 13px;
@@ -486,7 +443,7 @@
         font-size: 14px;
     }
 
-    .blogs__items-content h1 {
+    .blogs__items-content h3 {
         font-size: 18px;
     }
 
@@ -503,14 +460,6 @@
     }
 
     /* Contact */
-    .contact__title span {
-        font-size: 16px;
-    }
-
-
-    .contact__title h1 {
-        font-size: 42px;
-    }
 
     .contact__items p {
         font-size: 12px;
@@ -690,13 +639,6 @@
     }
 
     /* About  */
-    .about__content span {
-        font-size: 1.2rem;
-    }
-
-    .about__content h1 {
-        font-size: 2.5rem;
-    }
 
     .about__content p {
         font-size: 0.8rem;
@@ -743,13 +685,6 @@
     }
 
     /* Mission */
-    .mission span {
-        font-size: 1.2rem;
-    }
-
-    .mission h1 {
-        font-size: 3rem;
-    }
 
     .mission p {
         font-size: 1rem;
@@ -778,15 +713,6 @@
         flex-direction: column;
     }
 
-    .vision__content span {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .vision__content h1 {
-        font-size: 3rem;
-    }
-
     .vision__content p {
         font-size: 1rem;
         line-height: normal;
@@ -803,13 +729,6 @@
     }
 
     /* Offer */
-    .offer__title span {
-        font-size: 1rem;
-    }
-
-    .offer__title h1 {
-        font-size: 3.5rem;
-    }
 
     .offer__title p {
         font-size: 1rem;
@@ -830,14 +749,6 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .product__title span {
-        font-size: 1rem;
-    }
-
-
-    .product__title h1 {
-        font-size: 3.2rem;
-    }
 
     .product__title p {
         font-size: 1rem;
@@ -878,13 +789,7 @@
 
     /* Testimonials */
 
-    .testimonials__title span {
-        font-size: 1rem;
-    }
 
-    .testimonials__title h1 {
-        font-size: 3rem;
-    }
 
     .testimonials__items-title img {
         width: 50px;
@@ -943,13 +848,7 @@
         width: 65%;
     }
 
-    .fresh__content span {
-        font-size: 1rem;
-    }
 
-    .fresh__content h1 {
-        font-size: 3rem;
-    }
 
     .fresh__content p {
         font-size: 1rem;
@@ -976,7 +875,7 @@
         height: 500px;
     }
 
-    .provide__content h1 {
+    .provide__content h2 {
         font-size: 3rem;
         width: 80vw;
     }
@@ -999,15 +898,6 @@
         gap: 4rem;
     }
 
-    .blogs__title span {
-        font-size: 1rem;
-    }
-
-    .blogs__title h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
-
     .blogs__title p {
         font-size: 1rem;
     }
@@ -1021,7 +911,7 @@
         font-size: 1rem;
     }
 
-    .blogs__items-content h1 {
+    .blogs__items-content h3 {
         font-size: 1.5rem;
     }
 
@@ -1042,14 +932,7 @@
         width: var(--container-width);
     }
 
-    .contact__title span {
-        font-size: 1.2rem;
-    }
 
-
-    .contact__title h1 {
-        font-size: 3.5rem;
-    }
 
     .contact__content {
         flex-direction: column;
@@ -1227,13 +1110,6 @@
     }
 
     /* About  */
-    .about__content span {
-        justify-content: center;
-    }
-
-    .about__content h1 {
-        line-height: normal;
-    }
 
     .about__content {
         text-align: center;
@@ -1320,9 +1196,6 @@
         text-align: center;
     }
 
-    .vision__content span {
-        justify-content: center;
-    }
 
     .vision__content p {
         width: 100%;
@@ -1357,9 +1230,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .product__title span {
-        justify-content: center;
-    }
+
 
     .product__title {
         text-align: center;
@@ -1447,14 +1318,7 @@
         order: 1;
     }
 
-    .fresh__content span {
-        font-size: 0.8rem;
-    }
 
-    .fresh__content h1 {
-        font-size: 2rem;
-        line-height: normal;
-    }
 
     .fresh__content p {
         line-height: normal;
@@ -1482,7 +1346,7 @@
         height: 500px;
     }
 
-    .provide__content h1 {
+    .provide__content h2 {
         font-size: 2.5rem;
         width: 90vw;
         line-height: normal;
@@ -1526,10 +1390,6 @@
         text-align: center;
     }
 
-    .contact__title h1 {
-        font-size: 3rem;
-        width: 100%;
-    }
 
     .contact__items {
         width: 100%;
